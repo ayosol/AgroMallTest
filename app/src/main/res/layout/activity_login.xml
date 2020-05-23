@@ -75,8 +75,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:hint="Enter Email Address here"
         android:textAlignment="center"
+        android:hint="Enter Email Address here"
         app:boxBackgroundColor="#AAFFFFFF"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
@@ -94,6 +94,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:textSize="14sp" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -121,6 +122,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:textSize="14sp" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

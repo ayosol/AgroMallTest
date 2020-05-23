@@ -4,5 +4,10 @@
     <gradient
         android:angle="270"
         android:endColor="#8D008737"
+        android:gradientRadius="30"
         android:startColor="@color/appColor" />
+    <!--apply a border around button-->
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" />
 </shape>

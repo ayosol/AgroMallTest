@@ -65,6 +65,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             //show LoginActivity
             Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
             startActivity(intent);
+            finish();
         }
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                 .putBoolean("isFirstRun", false).commit();
