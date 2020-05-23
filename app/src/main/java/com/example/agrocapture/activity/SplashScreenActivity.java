@@ -30,16 +30,12 @@ public class SplashScreenActivity extends AppCompatActivity {
         splash_icon.animate().translationXBy(2000).setDuration(3500);
 
         //Set Text to fade in gradually
-        /*Animation fade_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
-        splash_text.startAnimation(fade_in);*/
-
         final float startSize = 2; // Size in pixels
         final float endSize = 42;
         final int animationDuration = 3000; // Animation duration in ms
 
         ValueAnimator animator = ValueAnimator.ofFloat(startSize, endSize);
         animator.setDuration(animationDuration);
-
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -53,10 +49,24 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
+                runOnce();
             }
         }, SPLASH_TIME);
+    }
+
+    public void runOnce() {
+        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun", true);
+        if (isFirstRun) {
+            //show OnboardingActivity
+            startActivity(new Intent(SplashScreenActivity.this, OnboardingActivity.class));
+            finish();
+        } else {
+            //show LoginActivity
+            Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                .putBoolean("isFirstRun", false).commit();
     }
 }
