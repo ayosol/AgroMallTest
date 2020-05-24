@@ -39,7 +39,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //Get the string inputs
+                startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+
+                /*//Get the string inputs
                 email = txt_email.getEditableText().toString().trim();
                 password = txt_password.getEditableText().toString().trim();
 
@@ -56,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 else {
                     error = true;
                     customToast();
-                }
+                }*/
 
             }
         });

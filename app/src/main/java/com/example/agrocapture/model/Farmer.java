@@ -3,28 +3,22 @@ package com.example.agrocapture.model;
 public class Farmer {
 
     private String Farmer_name;
-    private String email;
+    private String Email;
     private String Date_of_birth;
+    private String Address;
     private String State_of_origin;
     private int Thumbnail;
 
     public Farmer() {
     }
 
-    public Farmer(String farmer_name, String email, String date_of_birth, String state_of_origin, int thumbnail) {
+    public Farmer(String farmer_name, String email, String date_of_birth, String address, String state_of_origin, int thumbnail) {
         Farmer_name = farmer_name;
-        this.email = email;
+        Email = email;
         Date_of_birth = date_of_birth;
+        Address = address;
         State_of_origin = state_of_origin;
         Thumbnail = thumbnail;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getFarmer_name() {
@@ -33,6 +27,22 @@ public class Farmer {
 
     public void setFarmer_name(String farmer_name) {
         Farmer_name = farmer_name;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String address) {
+        Address = address;
     }
 
     public String getDate_of_birth() {
