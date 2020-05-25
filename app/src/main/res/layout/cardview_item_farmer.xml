@@ -1,59 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cardview_id"
     android:layout_width="match_parent"
-    android:layout_gravity="center"
-    android:clickable="true"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:foreground="?android:attr/selectableItemBackground"
-    cardview:cardCornerRadius="8dp"
-    cardview:cardElevation="8dp">
+    android:layout_margin="8dp">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical"
-        android:padding="8dp">
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        cardview:cardCornerRadius="8dp"
+        cardview:cardElevation="8dp"
+        cardview:layout_constraintBottom_toBottomOf="parent"
+        cardview:layout_constraintEnd_toEndOf="parent"
+        cardview:layout_constraintHorizontal_bias="0.5"
+        cardview:layout_constraintStart_toStartOf="parent"
+        cardview:layout_constraintTop_toTopOf="parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/img_farmer"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/ic_person"
-            app:civ_border_color="@color/appColor"
-            app:civ_border_width="0.5dp" />
-
-        <!--<ImageView
-            android:id="@+id/img_farmer"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:background="@color/black"
-            android:scaleType="centerCrop" />-->
-
-        <TextView
-            android:id="@+id/txt_name"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:textAlignment="center"
-            android:text="Farmer Name"
-            android:textColor="@color/appColor"
-            android:textSize="18sp" />
+            android:orientation="vertical"
+            android:padding="8dp">
 
-        <TextView
-            android:id="@+id/txt_email"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:textAlignment="center"
-            android:text="test@gmail.com"
-            android:textColor="@color/appColor"
-            android:textSize="12sp" />
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_farmer"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_person_green"
+                app:civ_border_color="@color/app_bg_color"
+                app:civ_border_width="0.5dp" />
 
-    </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Farmer Name"
+                android:textAlignment="center"
+                android:textColor="@color/app_bg_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="test@gmail.com"
+                android:textAlignment="center"
+                android:textColor="@color/app_bg_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Akoka street, Lagos, Nigeria"
+                android:textAlignment="center"
+                android:textColor="@color/app_bg_color"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

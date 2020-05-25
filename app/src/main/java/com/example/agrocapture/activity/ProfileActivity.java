@@ -11,7 +11,7 @@ import com.example.agrocapture.R;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private TextView txt_farmers_name, txt_farmers_email;
+    private TextView txt_farmers_name, txt_farmers_email, txt_farmers_address;
     private ImageView farmers_thumbnail;
 
     @Override
@@ -21,6 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         txt_farmers_name = findViewById(R.id.txt_farmers_name);
         txt_farmers_email = findViewById(R.id.txt_farmers_email);
+        txt_farmers_address = findViewById(R.id.txt_farmers_address);
         farmers_thumbnail = findViewById(R.id.farmers_img);
 
 
@@ -28,11 +29,13 @@ public class ProfileActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String farmers_name = intent.getExtras().getString("Name");
         String farmers_email = intent.getExtras().getString("Email");
+        String farmers_address = intent.getExtras().getString("Address");
         int farmers_img = intent.getExtras().getInt("Thumbnail");
 
         //Set the values on the view
         txt_farmers_name.setText(farmers_name);
         txt_farmers_email.setText(farmers_email);
+        txt_farmers_address.setText(farmers_address);
         farmers_thumbnail.setImageResource(farmers_img);
 
     }

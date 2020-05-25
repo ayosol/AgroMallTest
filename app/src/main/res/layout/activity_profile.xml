@@ -38,10 +38,18 @@
                 android:id="@+id/txt_farmers_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:background="@color/grayLight"
-                android:padding="8dp"
-                android:text="email" />
+                android:text="testmail@gmail.com" />
+
+            <TextView
+                android:id="@+id/txt_farmers_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/grayLight"
+                android:padding="2dp"
+                android:text="Akoka street, Lagos, nigeria" />
 
         </LinearLayout>
 

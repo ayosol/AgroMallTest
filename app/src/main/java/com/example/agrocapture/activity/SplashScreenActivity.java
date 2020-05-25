@@ -58,8 +58,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                 .getBoolean("isFirstRun", true);
         if (isFirstRun) {
-            //show OnboardingActivity
-            startActivity(new Intent(SplashScreenActivity.this, OnboardingActivity.class));
+            //show OnBoardingActivity
+            startActivity(new Intent(SplashScreenActivity.this, OnBoardingActivity.class));
             finish();
         } else {
             //show LoginActivity
