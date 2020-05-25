@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SplashScreenActivity"></activity>
-        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.AddFarmerActivity" />
+        <activity android:name=".activity.SplashScreenActivity" />
         <activity android:name=".activity.FarmersBoardActivity" />
+        <activity android:name=".activity.FarmerProfileActivity" />
         <activity android:name=".activity.OnBoardingActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.DashboardActivity">

@@ -13,15 +13,15 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.agrocapture.R;
-import com.example.agrocapture.activity.ProfileActivity;
+import com.example.agrocapture.activity.FarmerProfileActivity;
 import com.example.agrocapture.model.Farmer;
 
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
-    private Context mContext;
-    private List<Farmer> mFarmer;
+    private final Context mContext;
+    private final List<Farmer> mFarmer;
 
     public RecyclerViewAdapter(Context mContext, List<Farmer> mFarmer) {
         this.mContext = mContext;
@@ -52,12 +52,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             public void onClick(View v) {
 
                 //Pass the required Data
-                Intent intent = new Intent(mContext, ProfileActivity.class);
+                Intent intent = new Intent(mContext, FarmerProfileActivity.class);
                 intent.putExtra("Name", mFarmer.get(position).getFarmer_name());
                 intent.putExtra("Email", mFarmer.get(position).getEmail());
                 intent.putExtra("Address", mFarmer.get(position).getAddress());
                 intent.putExtra("Thumbnail", mFarmer.get(position).getThumbnail());
-                //Start the ProfileActivity
+                //Start the FarmerProfileActivity
                 mContext.startActivity(intent);
             }
         });
@@ -72,9 +72,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txt_farmer, txt_email, txt_address;
-        ImageView img_farmer_thumbnail;
-        CardView cardView;
+        final TextView txt_farmer;
+        final TextView txt_email;
+        final TextView txt_address;
+        final ImageView img_farmer_thumbnail;
+        final CardView cardView;
 
         public MyViewHolder(View itemView) {
             super(itemView);

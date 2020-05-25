@@ -4,68 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-    android:background="@drawable/agric_clouds"
-    android:backgroundTint="#C4FFFFFF"
-    android:backgroundTintMode="src_atop"
-    tools:context=".activity.LoginActivity">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/menu_imageView"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@drawable/icon_tractor_green"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:id="@+id/appNameTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-10dp"
-            android:text="AgroMall"
-            android:textAlignment="center"
-            android:textColor="@color/app_bg_color"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/welcome_note"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="monospace"
-            android:text="Welcome to AgroMall"
-            android:textAlignment="center"
-            android:textColor="@color/app_bg_color"
-            android:textSize="20sp" />
-    </LinearLayout>
+    android:background="@color/app_bg_color_light"
+    tools:context=".activity.AddFarmerActivity">
 
     <TextView
-        android:id="@+id/txt_signIn_here"
+        android:id="@+id/welcome_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="Sign in to continue"
+        android:fontFamily="monospace"
+        android:text="Welcome to AgroMall"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/grayLight"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_Layout"
@@ -86,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_signIn_here">
+        app:layout_constraintTop_toBottomOf="@+id/welcome_note">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_EditText"
@@ -136,19 +90,5 @@
         app:layout_constraintEnd_toEndOf="@id/password_Layout"
         app:layout_constraintStart_toStartOf="@id/password_Layout"
         app:layout_constraintTop_toBottomOf="@+id/password_Layout" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/app_bg_color"
-        android:clickable="true"
-        android:text="Forgot Password?"
-        android:textAlignment="center"
-        android:textColor="@color/app_bg_color"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@id/btn_login"
-        app:layout_constraintStart_toStartOf="@id/btn_login"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

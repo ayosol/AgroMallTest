@@ -19,10 +19,11 @@ import com.example.agrocapture.R;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btn_login;
-    EditText txt_email, txt_password;
+    private Button btn_login;
+    private EditText txt_email;
+    private EditText txt_password;
     String email, password;
-    Boolean error;
+    private Boolean error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
 
-                /*//Get the string inputs
+                //Get the string inputs
                 email = txt_email.getEditableText().toString().trim();
                 password = txt_password.getEditableText().toString().trim();
 
@@ -58,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                 else {
                     error = true;
                     customToast();
-                }*/
+                }
 
             }
         });
@@ -69,9 +70,8 @@ public class LoginActivity extends AppCompatActivity {
         //Inflate Custom Toast
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.custom_toast_container));
-
         TextView textView = layout.findViewById(R.id.toast_text);
-        if (error == true) {
+        if (error) {
             textView.setText("Login Failed! Enter correct details");
         } else {
             textView.setText("Login Successful");

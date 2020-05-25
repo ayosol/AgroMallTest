@@ -9,21 +9,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.agrocapture.R;
 
-public class ProfileActivity extends AppCompatActivity {
+public class FarmerProfileActivity extends AppCompatActivity {
 
-    private TextView txt_farmers_name, txt_farmers_email, txt_farmers_address;
+    private TextView txt_farmers_name;
+    private TextView txt_farmers_email;
+    private TextView txt_farmers_address;
     private ImageView farmers_thumbnail;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        txt_farmers_name = findViewById(R.id.txt_farmers_name);
-        txt_farmers_email = findViewById(R.id.txt_farmers_email);
-        txt_farmers_address = findViewById(R.id.txt_farmers_address);
-        farmers_thumbnail = findViewById(R.id.farmers_img);
-
+        //Set back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Receive data from intent
         Intent intent = getIntent();
@@ -37,6 +35,6 @@ public class ProfileActivity extends AppCompatActivity {
         txt_farmers_email.setText(farmers_email);
         txt_farmers_address.setText(farmers_address);
         farmers_thumbnail.setImageResource(farmers_img);
-
     }
+
 }

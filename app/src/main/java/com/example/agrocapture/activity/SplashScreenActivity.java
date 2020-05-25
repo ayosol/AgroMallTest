@@ -13,9 +13,9 @@ import com.example.agrocapture.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIME = 4500;
-    ImageView splash_icon;
-    TextView splash_text;
+    private static final int SPLASH_TIME = 4500;
+    private ImageView splash_icon;
+    private TextView splash_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +54,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         }, SPLASH_TIME);
     }
 
-    public void runOnce() {
-        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+    private void runOnce() {
+        boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                 .getBoolean("isFirstRun", true);
         if (isFirstRun) {
             //show OnBoardingActivity
@@ -68,6 +68,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             finish();
         }
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                .putBoolean("isFirstRun", false).commit();
+                .putBoolean("isFirstRun", false).apply();
     }
 }

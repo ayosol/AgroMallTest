@@ -18,7 +18,7 @@ import java.util.List;
 
 public class FarmersBoardActivity extends AppCompatActivity {
 
-    List<Farmer> farmerList;
+    private List<Farmer> farmerList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +68,7 @@ public class FarmersBoardActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_farmer, menu);
         return true;
     }
 
@@ -77,12 +77,22 @@ public class FarmersBoardActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_favorite) {
-            Toast.makeText(FarmersBoardActivity.this, "Action clicked", Toast.LENGTH_LONG).show();
-            return true;
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+
+            case R.id.menu_add_farmer:
+                Toast.makeText(FarmersBoardActivity.this, "Add Farmer Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+            case R.id.menu_delete_farmer:
+                Toast.makeText(FarmersBoardActivity.this, "Delete Farmer Clicked", Toast.LENGTH_LONG).show();
+                break;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
         return super.onOptionsItemSelected(item);

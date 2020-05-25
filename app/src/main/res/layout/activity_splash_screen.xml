@@ -30,6 +30,7 @@
             android:id="@+id/splash_icon"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:contentDescription="TODO"
             android:src="@drawable/icon_tractor_white" />
 
         <TextView
