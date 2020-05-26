@@ -14,13 +14,16 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.agrocapture.R;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class DashboardActivity extends AppCompatActivity implements com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener {
 
-    static final int REQUEST_IMAGE_CAPTURE = 1;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private NavigationView mNavigationView;
+
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,6 +87,7 @@ public class DashboardActivity extends AppCompatActivity implements com.google.a
                 Toast.makeText(this, "Find farm clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_logout:
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
                 break;
         }

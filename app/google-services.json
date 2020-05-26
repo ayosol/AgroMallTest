@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "889628787497",
+    "firebase_url": "https://agrocapture.firebaseio.com",
+    "project_id": "agrocapture",
+    "storage_bucket": "agrocapture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889628787497:android:e3118faa9f48f38ca56d38",
+        "android_client_info": {
+          "package_name": "com.example.agrocapture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889628787497-fnmur0tto70nigbcqr1a0ms06dbfr9j5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlrrPpHA0aTG_wIoUV-VSBJL6mf7bzKTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889628787497-fnmur0tto70nigbcqr1a0ms06dbfr9j5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
