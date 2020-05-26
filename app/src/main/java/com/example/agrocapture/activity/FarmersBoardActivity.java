@@ -1,5 +1,6 @@
 package com.example.agrocapture.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class FarmersBoardActivity extends AppCompatActivity {
 
-    private List<Farmer> farmerList;
+    List<Farmer> farmerList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +85,7 @@ public class FarmersBoardActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu_add_farmer:
-                Toast.makeText(FarmersBoardActivity.this, "Add Farmer Clicked", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(FarmersBoardActivity.this, AddFarmerActivity.class));
                 break;
 
             case R.id.menu_delete_farmer:

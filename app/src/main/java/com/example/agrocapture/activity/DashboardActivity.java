@@ -3,6 +3,7 @@ package com.example.agrocapture.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,6 +31,7 @@ public class DashboardActivity extends AppCompatActivity implements com.google.a
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mNavigationView.bringToFront();
@@ -52,9 +54,11 @@ public class DashboardActivity extends AppCompatActivity implements com.google.a
     public void onBackPressed() {
         if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
+
         } else {
             super.onBackPressed();
         }
+
     }
 
     @Override
@@ -87,4 +91,8 @@ public class DashboardActivity extends AppCompatActivity implements com.google.a
         return true;
     }
 
+
+    public void addFarmer(View view) {
+        startActivity(new Intent(DashboardActivity.this, AddFarmerActivity.class));
+    }
 }

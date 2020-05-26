@@ -19,11 +19,11 @@ import com.example.agrocapture.R;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button btn_login;
-    private EditText txt_email;
-    private EditText txt_password;
+    Button btn_login;
+    EditText txt_email;
+    EditText txt_password;
     String email, password;
-    private Boolean error;
+    Boolean error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
