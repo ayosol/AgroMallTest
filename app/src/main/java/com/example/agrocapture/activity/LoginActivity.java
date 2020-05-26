@@ -39,9 +39,6 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
-
                 //Get the string inputs
                 email = txt_email.getEditableText().toString().trim();
                 password = txt_password.getEditableText().toString().trim();

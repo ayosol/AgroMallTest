@@ -7,12 +7,14 @@ public class Farmer {
     private String Date_of_birth;
     private String Address;
     private String State_of_origin;
+    private String Phone;
     private int Thumbnail;
+
 
     public Farmer() {
     }
 
-    public Farmer(String farmer_name, String email, String date_of_birth, String address, String state_of_origin, int thumbnail) {
+    public Farmer(String farmer_name, String email, String date_of_birth, String address, String phone, String state_of_origin, int thumbnail) {
         Farmer_name = farmer_name;
         Email = email;
         Date_of_birth = date_of_birth;
@@ -43,6 +45,14 @@ public class Farmer {
 
     public void setAddress(String address) {
         Address = address;
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String phone) {
+        Phone = phone;
     }
 
     public String getDate_of_birth() {

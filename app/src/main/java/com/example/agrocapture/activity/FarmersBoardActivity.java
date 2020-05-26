@@ -32,30 +32,39 @@ public class FarmersBoardActivity extends AppCompatActivity {
         farmerList = new ArrayList<>();
 
         //Populate the List here
-        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.farmer));
-        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", R.drawable.farmer_with_tool));
-        farmerList.add(new Farmer("Mr. Samson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Abuja", R.drawable.farmers));
-        farmerList.add(new Farmer("Mrs. Grace", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_harvest));
-        farmerList.add(new Farmer("Mr. Johnson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.agric_products));
-        farmerList.add(new Farmer("Mr. Titus", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_person_green));
-        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_sprout));
-        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", R.drawable.farm_pic_show));
-        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.farmer));
-        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", R.drawable.farmer_with_tool));
-        farmerList.add(new Farmer("Mr. Samson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Abuja", R.drawable.farmers));
-        farmerList.add(new Farmer("Mrs. Grace", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_harvest));
-        farmerList.add(new Farmer("Mr. Johnson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.agric_products));
-        farmerList.add(new Farmer("Mr. Titus", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_person_green));
-        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_sprout));
-        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", R.drawable.farm_pic_show));
-        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.farmer));
-        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", R.drawable.farmer_with_tool));
-        farmerList.add(new Farmer("Mr. Samson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Abuja", R.drawable.farmers));
-        farmerList.add(new Farmer("Mrs. Grace", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_harvest));
-        farmerList.add(new Farmer("Mr. Johnson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.agric_products));
-        farmerList.add(new Farmer("Mr. Titus", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_person_green));
-        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", R.drawable.ic_sprout));
-        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", R.drawable.farm_pic_show));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "+2348076345676", "Lagos", R.drawable.farmer));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farmer_with_tool));
+        farmerList.add(new Farmer("Mr. Samson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Abuja", "+2348076345676", R.drawable.farmers));
+        farmerList.add(new Farmer("Mrs. Grace", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_harvest));
+        farmerList.add(new Farmer("Mr. Johnson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.agric_products));
+        farmerList.add(new Farmer("Mr. Titus", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_person_green));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_sprout));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farm_pic_show));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.farmer));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farmer_with_tool));
+        farmerList.add(new Farmer("Mr. Samson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Abuja", "+2348076345676", R.drawable.farmers));
+        farmerList.add(new Farmer("Mrs. Grace", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_harvest));
+        farmerList.add(new Farmer("Mr. Johnson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.agric_products));
+        farmerList.add(new Farmer("Mr. Titus", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_person_green));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_sprout));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farm_pic_show));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "+2348076345676", "Lagos", R.drawable.farmer));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farmer_with_tool));
+        farmerList.add(new Farmer("Mr. Samson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Abuja", "+2348076345676", R.drawable.farmers));
+        farmerList.add(new Farmer("Mrs. Grace", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_harvest));
+        farmerList.add(new Farmer("Mr. Johnson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.agric_products));
+        farmerList.add(new Farmer("Mr. Titus", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_person_green));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_sprout));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farm_pic_show));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.farmer));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farmer_with_tool));
+        farmerList.add(new Farmer("Mr. Samson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Abuja", "+2348076345676", R.drawable.farmers));
+        farmerList.add(new Farmer("Mrs. Grace", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_harvest));
+        farmerList.add(new Farmer("Mr. Johnson", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.agric_products));
+        farmerList.add(new Farmer("Mr. Titus", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_person_green));
+        farmerList.add(new Farmer("Mr. Abayomi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Lagos", "+2348076345676", R.drawable.ic_sprout));
+        farmerList.add(new Farmer("Mr. Adeyemi", "test@gmail.com", "2000-03-24", "Akoka street, Lagos, Nigeria", "Ogun", "+2348076345676", R.drawable.farm_pic_show));
+
 
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);

@@ -17,6 +17,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class DashboardActivity extends AppCompatActivity implements com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener {
 
+    static final int REQUEST_IMAGE_CAPTURE = 1;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private NavigationView mNavigationView;
@@ -83,7 +84,7 @@ public class DashboardActivity extends AppCompatActivity implements com.google.a
                 Toast.makeText(this, "Find farm clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_logout:
-                Toast.makeText(this, "Log out Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
                 break;
         }
 
@@ -91,6 +92,15 @@ public class DashboardActivity extends AppCompatActivity implements com.google.a
         return true;
     }
 
+
+    public void viewFarms(View view) {
+        Toast.makeText(this, "Registered farms clicked", Toast.LENGTH_SHORT).show();
+        //startActivity(new Intent(DashboardActivity.this, FarmBoardActivity.class));
+    }
+
+    public void viewFarmers(View view) {
+        startActivity(new Intent(DashboardActivity.this, FarmersBoardActivity.class));
+    }
 
     public void addFarmer(View view) {
         startActivity(new Intent(DashboardActivity.this, AddFarmerActivity.class));
